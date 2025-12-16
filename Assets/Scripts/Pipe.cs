@@ -68,4 +68,9 @@ public class Pipe : MonoBehaviour
         player.localScale = endScale;
     }
 
+    private AudioSource source;
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 }
