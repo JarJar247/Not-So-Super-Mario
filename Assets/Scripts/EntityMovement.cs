@@ -1,10 +1,17 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class EntityMovement : MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = Random(1, 4);
+
+    private static float Random(int v1, int v2)
+    {
+        throw new NotImplementedException();
+    }
+
     public Vector2 direction = Vector2.left;
 
     private Rigidbody2D rb;
